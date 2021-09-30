@@ -33,6 +33,73 @@
             <li>Chases the other cat</li>
           </ul>
       </article>
+
+      <!-- the form tag defines the area of the form - when you submit, you submit all the information inside the form tag -->
+      <form action="index.html" method="GET">
+        <!-- the label and the input are linked - the for attribute in the label tag and the id tag in the input must match -->
+        <!-- all form fields must have a type attribute (defines what they are) and a name attribute (gives a name to the date being sent) -->
+        <p>
+        <label for="username">Name: </label>
+        <input id="username" type="text" name="username" placeholder="John Doe" required>
+        </p>
+        <p>
+        <!-- the value attribute will prefill a form field with particular text - the value attribute will override a placeholder -->
+        <label for="firstname">First name:</label>
+        <input id="firstname" type="text" name="firstname" value="Mr. ">
+        <p>
+          <!-- the password input field hides the characters the user types -->
+          <label for="pass">Password:</label>
+          <input id="pass" type="password" name="password">
+        </p>
+        <p>
+          <!-- some inputs are more then simply text, like the color picker -->
+          <!-- note: use the american spelling of "color" when typing the code -->
+          <label for="col">Pick a colour:</label>
+          <input id="col" type="color" name="col">
+        </p>
+        <p>
+          <label for="file">Upload:</label>
+          <input id="file" type="file" name="file"> 
+        </p>
+        <p>
+          <label for="num">Pick a number:</label>
+          <input id="num" type="range" name="num" value="4">
+        </p>
+        <p>
+          <!-- textarea is for multiple lines of text -->
+          <label for="info">Enter info here:</label>
+          <textarea id="info" name="info"></textarea>
+        </p>
+        <p>
+          <label for="fruit">Pick a fruit:</label>
+          <select id="fruit" name="fruit">
+            <option value="default">Pick a fruit...</option>
+            <option value="banana">Banana</option>
+            <option value="apple">Apple</option>
+            <option value="grape">Grape</option>
+            <option value="orange">Orange</option>
+          </select>
+        </p>
+        <p>
+          <label for="spam">Spam me: </label>
+          <input type="checkbox" id="spam" name="spam" checked>
+
+          <label for="no spam">Don't spam me: </label>
+          <input type="checkbox" id="no spam" name="no spam">
+        </p>
+        <p>
+          <!-- radio buttons need to have a matching name attribute to make them a set -->
+          <span>Do you like dogs:</span>
+          <label for="yes">Yes!</label>
+          <input type="radio" id="yes" name="dogs" value="yes">
+          <label for="no">No!</label>
+          <input type="radio" id="no" name="dogs" value="no">
+        </p>
+        <p>
+          <!-- the submit button submits the form -->
+          <button type="submit" name="submit">Submit</button>
+        </p>
+      </form>
     </main>
     <footer>
         <article>&copy; Somebody, Somewhere, 2021</article>
