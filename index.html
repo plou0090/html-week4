@@ -84,8 +84,8 @@
           <label for="spam">Spam me: </label>
           <input type="checkbox" id="spam" name="spam" checked>
 
-          <label for="no spam">Don't spam me: </label>
-          <input type="checkbox" id="no spam" name="no spam">
+          <label for="nospam">Don't spam me: </label>
+          <input type="checkbox" id="nospam" name="nospam">
         </p>
         <p>
           <!-- radio buttons need to have a matching name attribute to make them a set -->
@@ -100,7 +100,36 @@
           <button type="submit" name="submit">Submit</button>
         </p>
       </form>
+
+      <!-- table -->
+      <table>
+        <!-- thead defines the header area of the table -->
+        <thead>
+          <!-- tr defines the table row -->
+          <tr>
+            <!-- th defines the header of a column -->
+            <th>Name</th>
+            <th>Level</th>
+            <th>Student Number</th>
+          </tr>
+        </thead>
+        <!-- tbody defines the main are of the table -->
+        <tbody>
+          <tr>
+            <!-- td defines a table data cell -->
+            <td>Justice</td>
+            <td>01</td>
+            <td>404...</td>
+          </tr>
+          <tr>
+            <td>James</td>
+            <td>01</td>
+            <td>403...</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
+    <hr>
     <footer>
         <article>&copy; Somebody, Somewhere, 2021</article>
     </footer>
